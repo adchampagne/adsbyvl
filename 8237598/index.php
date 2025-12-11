@@ -25,14 +25,14 @@
    <meta name="theme-color" content="#ffffff">
 
    <meta property="og:type" content="website" /> 
-   <meta property="og:title" content="AdChampagne — ведущее агентство мобильного маркетинга в России" /> 
-   <meta property="og:description" content="AdChampagne — агентство мобильного маркетинга, которое реализует эффективные кампании по привлечению и построению бренда для топ-100 клиентов в России" /> 
-   <meta property="og:url" content="https://adchampagne.ru/" />
-   <link rel="canonical" href=" https://adchampagne.ru/">
-   <meta name="twitter:title" content="AdChampagne — ведущее агентство мобильного маркетинга в России" /> 
-   <meta name="twitter:description" content="AdChampagne — агентство мобильного маркетинга, которое реализует эффективные кампании по привлечению и построению бренда для топ-100 клиентов в России" /> 
+   <meta property="og:title" content="Advertising Solutions — ведущее агентство мобильного маркетинга в России" /> 
+   <meta property="og:description" content="Advertising Solutions — агентство мобильного маркетинга, которое реализует эффективные кампании по привлечению и построению бренда для топ-100 клиентов в России" /> 
+   <meta property="og:url" content="https://www.adsbyvl.ru/" />
+   <link rel="canonical" href="https://www.adsbyvl.ru/">
+   <meta name="twitter:title" content="Advertising Solutions — ведущее агентство мобильного маркетинга в России" /> 
+   <meta name="twitter:description" content="Advertising Solutions — агентство мобильного маркетинга, которое реализует эффективные кампании по привлечению и построению бренда для топ-100 клиентов в России" /> 
 
-   <meta property="og:url" content="https://adchampagne.ru/">
+   <meta property="og:url" content="https://www.adsbyvl.ru/">
    <meta property="og:image" content="local/assets/images/metaPoster/1200x630.png">
    <meta property="og:image:width" content="1200">
    <meta property="og:image:height" content="630">
