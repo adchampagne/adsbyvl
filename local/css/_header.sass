@@ -1,0 +1,156 @@
+.header
+   display: flex
+   align-items: flex-start
+   justify-content: center
+   height: 100vh
+
+   .wrapper,
+   .wrapper-min
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: auto 0
+
+   &__title
+      font-size: 100px
+      color: #fff
+      font-weight: 500
+      line-height: 105%
+      text-align: center
+      margin-bottom: 36px
+      @media screen and ( max-width: 1440px )
+         font-size: 80px
+         margin-bottom: 28px
+      @media screen and ( max-width: 1024px )
+         font-size: 68px
+         margin-bottom: 20px
+      @media screen and ( max-width: 560px )
+         font-size: 50px
+         margin-bottom: 16px
+
+   &__desc
+      font-size: 32px
+      color: #fff
+      text-align: center
+      line-height: 165%
+      width: 75%
+      @media screen and ( max-width: 1440px )
+         font-size: 28px
+      @media screen and ( max-width: 1024px )
+         font-size: 24px
+      @media screen and ( max-width: 560px )
+         font-size: 18px
+
+   &__linksList
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 10px 20px
+      border-radius: 11px
+      background: #fff
+      transition: all .3s ease
+      margin-bottom: 12px
+      cursor: pointer
+      position: relative
+      @media screen and ( max-width: 560px )
+         display: none
+      p
+         color: $black
+         font-size: 24px
+         font-weight: 500
+         line-height: 110%
+         margin-right: 9px
+      img
+         width: 19px
+         min-width: 19px
+      &_list
+         display: flex
+         flex-direction: column
+         align-items: flex-start
+         justify-content: flex-start
+         position: absolute
+         top: 100%
+         left: 50%
+         transform: translateX(-50%) scale(.7)
+         pointer-events: none
+         opacity: 0
+         transform-origin: center top
+         background: #fff
+         z-index: 2
+         padding: 25px 22px
+         padding-right: 42px
+         border-radius: 11px
+         transition: all .3s ease
+         cursor: default
+         &::before
+            content: ""
+            display: block
+            position: absolute
+            top: -16px
+            left: 0
+            width: 100%
+            height: 16px
+         a
+            white-space: nowrap
+            font-size: 24px
+            font-weight: 500
+            line-height: 110%
+            color: $black
+            transition: all .3s ease
+            &.currentPage
+               color: $gray
+               pointer-events: none
+            & + a
+               margin-top: 19px
+            &:hover
+               color: $blue
+      &:hover
+         background: $yellow
+      &.openned
+         background: #fff
+         .header__linksList_list
+            opacity: 1
+            pointer-events: auto
+            transform: translateX(-50%) scale(1)
+   &__logo
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+      width: 35%
+      @media screen and ( max-width: 560px )
+         width: 50%
+      &_img
+         display: flex
+         align-items: flex-end
+         justify-content: flex-end
+         overflow: hidden
+         width: 100%
+         img
+            width: 100%
+         &-white
+         &-green
+            position: absolute
+            top: 0
+            right: 0
+            transition: all 1s ease
+            width: calc(100% - 0px)
+            height: 100%
+            img
+               position: absolute
+               top: 0
+               right: 0
+               height: 100%
+               object-fit: cover
+               object-position: right center
+
+body.inner
+   .header
+      height: auto
+      padding-top: 180px
+      padding-bottom: 152px
+      .wrapper,
+      .wrapper-min
+         flex-direction: column
+         align-items: center
+         justify-content: flex-start

@@ -1,0 +1,188 @@
+@charset 'utf-8'
+
+// Colors
+$black: #1E1E1E
+$black75: rgba(0, 0, 0, 0.75)
+$black67: rgba(0, 0, 0, 0.65)
+$black55: rgba(0, 0, 0, 0.55)
+$yellow: #EBFF00
+$pink: #F468D5
+$green: #19FF5E
+$red: #FC0B19
+$blue: #405EFF
+$darkBlue: #30F
+$gray20: rgba(255, 255, 255, .2)
+$gray55: rgba(255, 255, 255, .55)
+$gray67: rgba(255, 255, 255, 0.67)
+$gray77: rgba(255, 255, 255, 0.77)
+$gray: #A7A7A7
+
+// Values
+$cursorDefault: url('../assets/images/gui/cursor__default.svg')
+$cursorPointer: url('../assets/images/gui/cursor__pointer.svg')
+$cursorLoading: url('../assets/images/gui/cursor__loading.svg')
+
+// Mixins
+@mixin bigYellowButton()
+    background-color: $yellow
+    border-radius: 80px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    height: 114px
+    width: 100%
+    cursor: pointer
+    margin-bottom: 19px
+    overflow: hidden
+    transform-style: preserve-3d
+    transform: perspective(500px)
+    @media screen and ( max-width: 1440px )
+        height: 86px
+    @media screen and ( max-width: 1024px )
+        height: 68px
+    @media screen and ( max-width: 560px )
+        height: 51px
+        width: 51px
+        max-width: 51px
+        min-width: 51px
+    p
+        font-weight: 500
+        font-size: 19px
+        line-height: 100%
+        color: $black
+        transform: translateZ(50px)
+        display: block
+        @media screen and ( max-width: 1440px )
+            font-size: 15px
+        @media screen and ( max-width: 560px )
+            display: none
+    .plus, .close
+        position: absolute
+        top: 50%
+        right: 24px
+        border: 2.23386px solid rgba(#1E1E1E, .1)
+        border-radius: 50%
+        width: 44px
+        min-width: 44px
+        aspect-ratio: 1/1
+        display: flex
+        align-items: center
+        justify-content: center
+        transform: translateZ(20px) translateY(-50%)
+        @media screen and ( max-width: 1440px )
+            width: 34px
+            min-width: 34px
+        @media screen and ( max-width: 1024px )
+            width: 20px
+            min-width: 20px
+        @media screen and ( max-width: 560px )
+            width: 20px
+            min-width: 20px
+            position: relative
+            top: unset
+            right: unset
+            transform-origin: center
+            transform: translateY(0) translateX(0)
+        img
+            width: 17px
+            min-width: 17px
+            @media screen and ( max-width: 1440px )
+                width: 12px
+                min-width: 12px
+    .close
+        img
+            transform: rotate(45deg)
+    
+
+// Main styles
+*
+    border: 0
+    box-sizing: border-box
+    outline: none
+    padding: 0
+    margin: 0
+    vertical-align: baseline
+    font-family: 'RoobertPRO', Verdana, Geneva, Tahoma, sans-serif
+    color: $black
+table
+    border-collapse: collapse
+    border-spacing: 0
+img
+    height: auto
+a
+    text-decoration: none
+html, body
+    background-color: $black
+    cursor: $cursorDefault
+    &.blocked
+        overflow: hidden !important
+.wrapper
+    max-width: 1880px
+    width: 100%
+    margin: 0 auto
+    @media screen and (max-width: 1920px)
+        padding-left: 20px
+        padding-right: 20px
+.wrapper-middle
+    max-width: 1480px
+    width: 100%
+    margin: 0 auto
+    @media screen and (max-width: 1520px)
+        padding-left: 20px
+        padding-right: 20px
+.wrapper-min
+    max-width: 1124px
+    width: 100%
+    margin: 0 auto
+    @media screen and (max-width: 1164px)
+        padding-left: 20px
+        padding-right: 20px
+nav
+    display: none
+    @media screen and ( max-width: 560px )
+        display: block
+body.inner
+    overflow: unset
+    nav
+        display: block
+    main
+        opacity: 1 !important
+
+
+// UI
+@import 'ui'
+@import '_cursor'
+
+// Header Styles
+@import '_nav'
+@import '_menu'
+@import '_header'
+@import '_headerAbout'
+
+// Content Styles
+// Content Styles - Customers
+@import '_customersText'
+// Content Styles - Services
+@import '_servicesCards'
+@import '_aboutUsCards'
+@import '_team'
+@import '_visitHR'
+// Content Styles - Cases
+@import '_reviewsCards'
+@import '_casesCards'
+@import '_pricingCards'
+@import '_descriptionCards'
+@import '_processTextBlock'
+@import '_topCaseResults'
+@import '_innerText'
+// Content Styles - Sliders
+@import '_advantagesTextSlider'
+// Content Styles - Forms & Contacts
+@import '_contactsCards'
+@import '_formBlock'
+// Content Styles - Modals
+@import '_modal'
+
+// Footer Styles
+@import '_footer'

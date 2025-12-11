@@ -1,0 +1,95 @@
+.topCaseResults
+
+   .wrapper-min
+      display: flex
+      align-items: stretch
+      justify-content: space-between
+      flex-wrap: wrap
+
+   &__table
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      padding: 40px 54px
+      border-radius: 44px
+      border: 1px solid $gray20
+      margin-bottom: 18px
+      width: 100%
+      @media screen and ( max-width: 768px )
+         padding: 23px
+         border-radius: 26px
+         margin-bottom: 9px
+      tbody
+         @media screen and ( max-width: 1052px )
+            width: 100%
+         tr
+            @media screen and ( max-width: 1052px )
+               display: flex
+               justify-content: space-between
+               align-items: stretch
+               flex-wrap: wrap
+               width: 100%
+            td
+               padding-left: 44px
+               padding-right: 44px
+               @media screen and ( max-width: 1052px )
+                  width: calc(50% - 20px)
+               @media screen and ( max-width: 768px )
+                  padding-left: 0
+                  padding-right: 0
+               &.inOneLine
+                  h4
+                     white-space: nowrap
+                     @media screen and ( max-width: 560px )
+                        white-space: unset
+               &:first-child
+                  padding-left: 0
+               &:nth-child(2)
+                  @media screen and ( max-width: 768px )
+                     margin-bottom: 35px
+               &:last-child
+                  padding-right: 0
+
+   &__title
+      color: $gray67
+      font-size: 26px
+      font-weight: 400
+      line-height: 166%
+      margin-bottom: 5px
+      @media screen and ( max-width: 768px )
+         font-size: 18px
+         line-height: 165%
+         margin-bottom: 0
+
+   &__desc
+      color: #fff
+      font-size: 26px
+      font-weight: 400
+      line-height: 166%
+      @media screen and ( max-width: 768px )
+         font-size: 18px
+         line-height: 165%
+      
+   &__big
+      width: calc(50% - 9px)
+      color: #fff
+      padding: 48px 20px
+      text-align: center
+      font-size: 48px
+      font-weight: 500
+      line-height: 130%
+      border-radius: 44px
+      display: flex
+      align-items: center
+      justify-content: center
+      @media screen and ( max-width: 768px )
+         font-size: 24px
+         padding: 40px 16px
+         width: calc(50% - 4.5px)
+         border-radius: 26px
+      &--blue
+         background: $blue
+      &--pink
+         background: $pink
+      &--fullWidth
+         width: 100%

@@ -1,0 +1,198 @@
+.servicesCards
+   overflow: hidden
+   padding-bottom: 60px
+   @media screen and ( max-width: 560px )
+      padding-bottom: 0
+
+   .wrapper-middle
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap   
+
+   &__column
+      display: flex
+      flex-direction: column
+      width: calc(50% - 15px)
+      @media screen and ( max-width: 768px )
+         width: calc(50% - 6px)
+      @media screen and ( max-width: 560px )
+         width: 100%
+      & > *
+         flex: 2
+         position: relative
+         z-index: 3
+         & + *
+            flex: 3
+            z-index: 2
+            transform: rotate(-2.823deg) translateY(-5%)
+
+   &__item
+      border-radius: 54px
+      padding: 42px 50px
+      aspect-ratio: 1/1
+      position: relative
+      display: flex
+      flex-direction: column
+      opacity: 0
+      margin-bottom: 30px
+      @media screen and ( max-width: 768px )
+         margin-bottom: 8px
+      @media screen and ( max-width: 560px )
+         padding: 18px 23px
+         border-radius: 26px
+         margin-bottom: 8px
+      &_title
+         margin-bottom: 10px
+         font-size: 48px
+         font-weight: 500
+         color: #fff
+         line-height: 130%
+         @media screen and ( max-width: 560px )
+            font-size: 26px
+            line-height: 135%
+            margin-bottom: 5px
+      &_desc
+         font-size: 32px
+         line-height: 165%
+         color: #fff
+         width: 75%
+         @media screen and ( max-width: 560px )
+            font-size: 18px
+            width: 100%
+      &_button
+         margin-top: auto
+      &_animation
+         position: absolute
+         bottom: 2.15%
+         width: 56.87%
+         right: 40px
+      &_img
+         position: absolute
+         bottom: 2.15%
+         width: 56.87%
+         right: 5.44%
+         @media screen and ( max-width: 768px )
+            width: 40%
+            bottom: 7.15%
+         @media screen and ( max-width: 560px )
+            width: 60%
+      &_creative
+         position: absolute
+         bottom: -6.1%
+         right: 24.07%
+         width: 31.48%
+         overflow: hidden
+         border-radius: 26px
+         z-index: 3
+         @media screen and ( max-width: 768px )
+            width: 23.48%
+            right: 19.07%
+         @media screen and ( max-width: 560px )
+            width: 31.91%
+            right: 7.07%
+            bottom: -4.1%
+            border-radius: 16px
+         & > div,
+         video
+            width: 100%
+         &--first
+            transform: rotate(-6.041deg)
+            z-index: 2
+         &--second
+            transform: rotate(11.611deg)
+            bottom: 0.81%
+            right: -2.04%
+            @media screen and ( max-width: 560px )
+               bottom: -1.19%
+               right: -16.04%
+      &--darkBlue
+         background: $darkBlue
+      &--pink
+         background: $pink
+      &--blue
+         background: $blue
+      &--yellow
+         background: $yellow
+         h3
+            color: $black !important
+      &--pink
+         background: $pink
+      &--titleBlock
+         display: flex
+         align-items: center
+         justify-content: center
+         position: relative
+         overflow: hidden
+         aspect-ratio: unset
+         @media screen and ( max-width: 560px )
+            aspect-ratio: 1/(126.551/351)
+         h3
+            font-size: 48px
+            font-weight: 500
+            line-height: 130%
+            color: #fff
+            position: relative
+            z-index: 3
+            @media screen and ( max-width: 560px )
+               font-size: 26px
+               line-height: 166%
+               font-weight: 400
+         svg
+            position: absolute
+            top: 128%
+            left: 63%
+            transform: translate(-29%, 0) rotate(67deg)
+            width: 421%
+            pointer-events: none
+            z-index: 2
+      &--bordered
+         aspect-ratio: unset
+         border: 1px solid $gray20
+         display: flex
+         flex-direction: column
+         align-items: center
+         justify-content: center
+         padding: 56px 50px
+         padding-top: 68px
+         @media screen and ( max-width: 560px )
+            padding: 30px 36px
+         .servicesCards__item_desc
+            text-align: center
+            width: 85%
+            @media screen and ( max-width: 560px )
+               width: 100%
+         .servicesCards__item_button
+            margin-top: 18px
+      &--rotatedBG
+         svg
+            top: -46%
+            left: 14%
+            width: 121%
+            transform: translate(-29%, 0) rotate(173deg)
+
+   &__row
+      display: flex
+      width: 100%
+      @media screen and ( max-width: 560px )
+         flex-direction: column !important
+      & > *
+         flex: 1
+         & + *
+            margin-left: 18px
+            @media screen and ( max-width: 560px )
+               margin-left: 0
+               margin-top: 7px
+      & + *
+         margin-top: 36px
+         @media screen and ( max-width: 560px )
+            margin-top: 4px
+      &:nth-child(even)
+         flex-direction: row-reverse
+         & > *
+            & + *
+               margin-right: 18px
+               margin-left: 0
+               @media screen and ( max-width: 560px )
+                  margin-right: 0
+         .servicesCards__item--bordered
+            transform: rotate(2.823deg) translateY(-5%)

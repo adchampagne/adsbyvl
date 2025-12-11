@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-Light.eot');
+    src: local('Aktifo-A Light'), local('Aktifo-A-Light'),
+        url('Aktifo-A-Light.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-Light.woff2') format('woff2'),
+        url('Aktifo-A-Light.woff') format('woff'),
+        url('Aktifo-A-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-A Book';
+    src: url('Aktifo-A-BookOblique.eot');
+    src: local('Aktifo-A Book Oblique'), local('Aktifo-A-BookOblique'),
+        url('Aktifo-A-BookOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-BookOblique.woff2') format('woff2'),
+        url('Aktifo-A-BookOblique.woff') format('woff'),
+        url('Aktifo-A-BookOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-ExtraBold.eot');
+    src: local('Aktifo-A ExtraBold'), local('Aktifo-A-ExtraBold'),
+        url('Aktifo-A-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-ExtraBold.woff2') format('woff2'),
+        url('Aktifo-A-ExtraBold.woff') format('woff'),
+        url('Aktifo-A-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-Bold.eot');
+    src: local('Aktifo-A Bold'), local('Aktifo-A-Bold'),
+        url('Aktifo-A-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-Bold.woff2') format('woff2'),
+        url('Aktifo-A-Bold.woff') format('woff'),
+        url('Aktifo-A-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-ExtraBoldOblique.eot');
+    src: local('Aktifo-A ExtraBold Oblique'), local('Aktifo-A-ExtraBoldOblique'),
+        url('Aktifo-A-ExtraBoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-ExtraBoldOblique.woff2') format('woff2'),
+        url('Aktifo-A-ExtraBoldOblique.woff') format('woff'),
+        url('Aktifo-A-ExtraBoldOblique.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-A Book';
+    src: url('Aktifo-A-Book.eot');
+    src: local('Aktifo-A Book'), local('Aktifo-A-Book'),
+        url('Aktifo-A-Book.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-Book.woff2') format('woff2'),
+        url('Aktifo-A-Book.woff') format('woff'),
+        url('Aktifo-A-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-BoldOblique.eot');
+    src: local('Aktifo-A Bold Oblique'), local('Aktifo-A-BoldOblique'),
+        url('Aktifo-A-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-BoldOblique.woff2') format('woff2'),
+        url('Aktifo-A-BoldOblique.woff') format('woff'),
+        url('Aktifo-A-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-BlackOblique.eot');
+    src: local('Aktifo-A Black Oblique'), local('Aktifo-A-BlackOblique'),
+        url('Aktifo-A-BlackOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-BlackOblique.woff2') format('woff2'),
+        url('Aktifo-A-BlackOblique.woff') format('woff'),
+        url('Aktifo-A-BlackOblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-LightOblique.eot');
+    src: local('Aktifo-A Light Oblique'), local('Aktifo-A-LightOblique'),
+        url('Aktifo-A-LightOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-LightOblique.woff2') format('woff2'),
+        url('Aktifo-A-LightOblique.woff') format('woff'),
+        url('Aktifo-A-LightOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-Black.eot');
+    src: local('Aktifo-A Black'), local('Aktifo-A-Black'),
+        url('Aktifo-A-Black.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-Black.woff2') format('woff2'),
+        url('Aktifo-A-Black.woff') format('woff'),
+        url('Aktifo-A-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-Medium.eot');
+    src: local('Aktifo-A Medium'), local('Aktifo-A-Medium'),
+        url('Aktifo-A-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-Medium.woff2') format('woff2'),
+        url('Aktifo-A-Medium.woff') format('woff'),
+        url('Aktifo-A-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-ExtraBold.eot');
+    src: local('Aktifo-B ExtraBold'), local('Aktifo-B-ExtraBold'),
+        url('Aktifo-B-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-ExtraBold.woff2') format('woff2'),
+        url('Aktifo-B-ExtraBold.woff') format('woff'),
+        url('Aktifo-B-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-LightOblique.eot');
+    src: local('Aktifo-B Light Oblique'), local('Aktifo-B-LightOblique'),
+        url('Aktifo-B-LightOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-LightOblique.woff2') format('woff2'),
+        url('Aktifo-B-LightOblique.woff') format('woff'),
+        url('Aktifo-B-LightOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-SemiBold.eot');
+    src: local('Aktifo-A SemiBold'), local('Aktifo-A-SemiBold'),
+        url('Aktifo-A-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-SemiBold.woff2') format('woff2'),
+        url('Aktifo-A-SemiBold.woff') format('woff'),
+        url('Aktifo-A-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-BoldOblique.eot');
+    src: local('Aktifo-B Bold Oblique'), local('Aktifo-B-BoldOblique'),
+        url('Aktifo-B-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-BoldOblique.woff2') format('woff2'),
+        url('Aktifo-B-BoldOblique.woff') format('woff'),
+        url('Aktifo-B-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-SemiBoldOblique.eot');
+    src: local('Aktifo-A SemiBold Oblique'), local('Aktifo-A-SemiBoldOblique'),
+        url('Aktifo-A-SemiBoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-SemiBoldOblique.woff2') format('woff2'),
+        url('Aktifo-A-SemiBoldOblique.woff') format('woff'),
+        url('Aktifo-A-SemiBoldOblique.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-ExtraBoldOblique.eot');
+    src: local('Aktifo-B ExtraBold Oblique'), local('Aktifo-B-ExtraBoldOblique'),
+        url('Aktifo-B-ExtraBoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-ExtraBoldOblique.woff2') format('woff2'),
+        url('Aktifo-B-ExtraBoldOblique.woff') format('woff'),
+        url('Aktifo-B-ExtraBoldOblique.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-SemiBold.eot');
+    src: local('Aktifo-B SemiBold'), local('Aktifo-B-SemiBold'),
+        url('Aktifo-B-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-SemiBold.woff2') format('woff2'),
+        url('Aktifo-B-SemiBold.woff') format('woff'),
+        url('Aktifo-B-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-Light.eot');
+    src: local('Aktifo-B Light'), local('Aktifo-B-Light'),
+        url('Aktifo-B-Light.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-Light.woff2') format('woff2'),
+        url('Aktifo-B-Light.woff') format('woff'),
+        url('Aktifo-B-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-A';
+    src: url('Aktifo-A-MediumOblique.eot');
+    src: local('Aktifo-A Medium Oblique'), local('Aktifo-A-MediumOblique'),
+        url('Aktifo-A-MediumOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-A-MediumOblique.woff2') format('woff2'),
+        url('Aktifo-A-MediumOblique.woff') format('woff'),
+        url('Aktifo-A-MediumOblique.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-Medium.eot');
+    src: local('Aktifo-B Medium'), local('Aktifo-B-Medium'),
+        url('Aktifo-B-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-Medium.woff2') format('woff2'),
+        url('Aktifo-B-Medium.woff') format('woff'),
+        url('Aktifo-B-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-SemiBoldOblique.eot');
+    src: local('Aktifo-B SemiBold Oblique'), local('Aktifo-B-SemiBoldOblique'),
+        url('Aktifo-B-SemiBoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-SemiBoldOblique.woff2') format('woff2'),
+        url('Aktifo-B-SemiBoldOblique.woff') format('woff'),
+        url('Aktifo-B-SemiBoldOblique.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-B Book';
+    src: url('Aktifo-B-BookOblique.eot');
+    src: local('Aktifo-B Book Oblique'), local('Aktifo-B-BookOblique'),
+        url('Aktifo-B-BookOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-BookOblique.woff2') format('woff2'),
+        url('Aktifo-B-BookOblique.woff') format('woff'),
+        url('Aktifo-B-BookOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-MediumOblique.eot');
+    src: local('Aktifo-B Medium Oblique'), local('Aktifo-B-MediumOblique'),
+        url('Aktifo-B-MediumOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-MediumOblique.woff2') format('woff2'),
+        url('Aktifo-B-MediumOblique.woff') format('woff'),
+        url('Aktifo-B-MediumOblique.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-BlackOblique.eot');
+    src: local('Aktifo-B Black Oblique'), local('Aktifo-B-BlackOblique'),
+        url('Aktifo-B-BlackOblique.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-BlackOblique.woff2') format('woff2'),
+        url('Aktifo-B-BlackOblique.woff') format('woff'),
+        url('Aktifo-B-BlackOblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aktifo-B Book';
+    src: url('Aktifo-B-Book.eot');
+    src: local('Aktifo-B Book'), local('Aktifo-B-Book'),
+        url('Aktifo-B-Book.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-Book.woff2') format('woff2'),
+        url('Aktifo-B-Book.woff') format('woff'),
+        url('Aktifo-B-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-Black.eot');
+    src: local('Aktifo-B Black'), local('Aktifo-B-Black'),
+        url('Aktifo-B-Black.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-Black.woff2') format('woff2'),
+        url('Aktifo-B-Black.woff') format('woff'),
+        url('Aktifo-B-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktifo-B';
+    src: url('Aktifo-B-Bold.eot');
+    src: local('Aktifo-B Bold'), local('Aktifo-B-Bold'),
+        url('Aktifo-B-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Aktifo-B-Bold.woff2') format('woff2'),
+        url('Aktifo-B-Bold.woff') format('woff'),
+        url('Aktifo-B-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -1,0 +1,426 @@
+// **** Custom Styless ****
+    // 1. Imports
+    // 2. Colors
+    // 3. Mixins
+    // 4. Main styles
+    // 5. Global Classes
+    // 6. Navbar
+    // 7. Header
+    
+// Imports
+
+
+// Colors
+$black: #000
+$orange: #E6D2B4
+
+
+// Mixins
+@mixin black()
+    color: $black
+
+
+// Main styles
+*
+    border: 0
+    box-sizing: border-box
+    outline: none
+    padding: 0
+    margin: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+    font-family: Aktifo-A, sans-serif
+ol, ul
+    li
+        list-style-type: none
+table
+    border-collapse: collapse
+    border-spacing: 0
+img
+    height: auto
+    max-width: 100%
+a
+    text-decoration: none
+html, body
+    background: #BCC1CC
+.wrapper
+    max-width: 1148px
+    width: 100%
+    display: flex
+    margin: 0 auto
+    @media screen and (max-width: 1188px)
+        padding-left: 20px
+        padding-right: 20px
+
+
+// Global Classes
+.d-flex
+    display: flex
+    &--justify-content__
+        &space-between
+            justify-content: space-between
+        &center
+            justify-content: center
+    &--align-items__
+        &center
+            align-items: center
+        &stretch
+            align-items: stretch
+    &--flex-direction__
+        &column
+            flex-direction: column
+            &-reverse
+                flex-direction: column-reverse
+        &row
+            flex-direction: row
+            &-reverse
+                flex-direction: row-reverse
+.mg-
+    &top-
+        &100
+            margin-top: 100px
+.pd-
+    &bottom-
+        &200
+            padding-bottom: 200px
+
+
+
+
+
+
+
+// Navbar
+nav
+
+
+// Header
+header
+
+
+body
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    .logo
+        width: 226px
+        text-decoration: none
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        left: 50%
+        top: 56px
+        transform: translateX(-50%)
+        @media screen and ( max-width: 1920px )
+            top: 28px
+// Main
+main
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    flex-direction: column
+    width: 100%
+    @media screen and ( max-width: 1024px )
+        justify-content: flex-start
+        padding-top: 140px
+        position: relative
+        max-height: 100vh
+        overflow: hidden
+        @media screen and ( max-width: 1024px ) and ( orientation: landscape )
+            padding-top: 120px
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            height: 50vh
+            bottom: 0
+            right: 0
+            left: 0
+            background: #fff
+    .wrapper
+        background: #fff
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom: 60px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        min-height: 80vh
+        position: relative
+        @media screen and ( max-width: 1024px )
+            justify-content: flex-start
+            overflow: hidden
+            height: 100%
+        @media screen and ( max-width: 1024px ) and ( orientation: landscape )
+            min-height: unset
+        @media screen and ( max-width: 768px )
+            padding-bottom: 200px
+        .main__preimg--mobile
+            position: fixed
+            bottom: 20vh
+            @media screen and ( max-width: 1024px )
+                bottom: 50px
+            @media screen and ( max-width: 1024px ) and ( orientation: landscape )
+                display: none
+            @media screen and ( max-width: 768px )
+                bottom: 80px
+        .main__block1
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-top: 40px
+            @media screen and ( max-width: 1024px )
+                position: absolute
+                left: 20px
+                right: 20px
+                height: 100%
+            @media screen and ( max-width: 1024px ) and ( orientation: landscape )
+                padding-top: 32px
+            .main__title
+                font-size: 40px
+                line-height: 120%
+                font-weight: 600
+                color: $black
+                text-align: center
+                margin-bottom: 16px
+                @media screen and ( max-width: 1024px )
+                    font-size: 36px
+                    text-align: start
+                @media screen and ( max-width: 1024px ) and ( orientation: landscape )
+                    font-size: 28px
+            .main__desc
+                font-size: 24px
+                line-height: 140%
+                color: $black
+                text-align: center
+                margin-bottom: 36px
+                @media screen and ( max-width: 1024px )
+                    text-align: start
+                    font-size: 20px
+                @media screen and ( max-width: 1024px ) and ( orientation: landscape )
+                    font-size: 16px
+                    margin-bottom: 20px
+            .main__button
+                cursor: pointer
+                transition: all .3s ease
+                background: $orange
+                color: $black
+                font-size: 20px
+                line-height: 25px
+                text-align: center
+                padding-top: 21px
+                padding-bottom: 19px
+                padding-left: 28px
+                padding-right: 28px
+                width:  fit-content
+                @media screen and ( max-width: 1024px )
+                    font-size: 16px
+                    width: 100%
+                    max-width: 600px
+                @media screen and ( max-width: 1024px ) and ( orientation: landscape )
+                    max-width: 400px
+                &:hover
+                    background: #BCC1CC
+        .main__block2
+            padding-left: 15vw
+            padding-right: 15vw
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            transition: all .3s ease
+            opacity: 0
+            pointer-events: none
+            transform: translateY(100px)
+            background: #fff
+            z-index: 2
+            @media screen and ( max-width: 1024px )
+                justify-content: flex-start
+                padding-left: 28px
+                padding-right: 28px
+                padding-top: 40px
+                position: relative
+            .main__post_title
+                font-size: 40px
+                line-height: 120%
+                color: $black
+                font-weight: 600
+                margin-bottom: 44px
+                text-align: center
+                @media screen and ( max-width: 1024px )
+                    font-size: 32px
+            form
+                display: flex
+                flex-direction: column
+                width: 100%
+                label
+                    display: flex
+                    flex-direction: column
+                    position: relative
+                    margin-bottom: 32px
+                    span
+                        color: $black
+                        opacity: .3
+                        transition: all .3s ease
+                        position: absolute
+                        top: 4px
+                        left: 0
+                        font-size: 22px
+                        line-height: 26px
+                        transition: all .3s ease
+                        pointer-events: none
+                        &.inputed
+                            top: -16px
+                            font-size: 14px
+                            line-height: 18px
+                    input
+                        font-size: 22px
+                        line-height: 26px
+                        color: $black
+                        border-bottom: 1px solid $black
+                        padding-bottom: 5px
+                        padding-top: 5px
+                    p
+                        font-size: 14px
+                        line-height: 140%
+                        color: $black
+                        opacity: .5
+                        margin-top: 16px
+            button
+                background: $orange
+                color: $black
+                padding-top: 18px
+                padding-bottom: 16px
+                padding-left: 32px
+                padding-right: 32px
+                text-align: center
+                transition: all .3s ease
+                font-size: 18px
+                line-height: 22px
+                letter-spacing: 0.12em
+                text-transform: uppercase
+                width: fit-content
+                margin: 0 auto
+                width: 100%
+                cursor: pointer
+                &:hover
+                    background: #BCC1CC
+            &.openned
+                opacity: 1
+                transform: translateY(0px)
+                pointer-events: auto
+        .main__block3
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: #fff
+            z-index: 3
+            transition: all .3s ease
+            opacity: 0
+            pointer-events: none
+            transform: translateY(100px)
+            .main__img
+                margin-bottom: 20px
+                margin-top: auto
+                max-width: 200px
+                animation: thanks 5s infinite ease
+                transform: rotate(-10deg)
+                @keyframes thanks
+                    0%
+                        transform: rotate(-10deg)
+                    50%
+                        transform: rotate(10deg)
+                    100%
+                        transform: rotate(-10deg)   
+            .main__preimg
+                margin-top: auto
+                width: 132px
+                margin-bottom: 80px      
+            p
+                font-size: 22px
+                line-height: 140%
+                color: $black
+                text-align: center
+                a
+                    color: $black
+                    text-decoration: underline
+                    transition: all .3s ease
+                    &:hover
+                        color: $orange
+                & + p
+                    margin-top: 10px
+            &.openned
+                opacity: 1
+                pointer-events: auto
+                transform: translateY(0px)
+
+                
+
+// Section
+section
+
+
+// Footer
+footer
+    margin-top: -64px
+    transition: all .3s ease
+    min-height: unset !important
+    padding-bottom: 20px
+    @media screen and ( max-width: 1024px ) and ( orientation: landscape )
+        background: #fff
+        position: relative
+        bottom: 0
+        width: 100%        
+    .wrapper
+        min-height: unset
+        padding-bottom: 0
+        .footer__links
+            display: flex
+            align-items: center
+            justify-content: center
+            @media screen and ( max-width: 768px )
+                flex-direction: column
+            & > *
+                margin-left: 24px
+                opacity: .6
+                transition: all .3s ease
+                @media screen and ( max-width: 768px )
+                    margin-top: 4px
+                    margin-left: 0
+                    font-size: 12px
+                &:hover
+                    opacity: 1
+                &:first-child
+                    margin-left: 0
+            p
+                opacity: .6 !important
+        @media screen and ( max-width: 1024px ) and ( orientation: landscape )
+            display: flex
+            justify-content: center
+            padding-bottom: 20px
+        a
+            color: $black
+main
+    footer
+        display: none
+        @media screen and ( max-width: 768px )
+            display: block
+body
+    & > footer
+        display: block
+        @media screen and ( max-width: 768px )
+            display: none

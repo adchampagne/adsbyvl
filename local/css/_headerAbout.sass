@@ -1,0 +1,275 @@
+.headerAbout
+   padding-top: 80px
+   margin-bottom: 20px
+   width: 100%
+   overflow: hidden
+
+   .wrapper,
+   .wrapper-min
+      display: flex
+      justify-content: space-between
+      @media screen and ( max-width: 560px )
+         flex-wrap: wrap
+
+   &__item
+      flex: 1
+      border-radius: 54px
+      overflow: hidden
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+      @media screen and ( max-width: 1052px )
+         border-radius: 26px
+      @media screen and ( max-width: 560px )
+         flex: unset
+         width: calc(50% - 4.5px)
+      & > video
+         width: 100%
+         height: 100%
+         object-fit: cover
+         object-position: center
+         position: absolute
+         top: 0
+         left: 0
+         z-index: 1 !important
+      & > div
+         padding: 42px 50px
+         display: flex
+         flex-direction: column
+         align-items: center
+         width: 100%
+         position: relative
+         @media screen and ( max-width: 1052px )
+            padding: 24px 28px
+         @media screen and ( max-width: 560px )
+            padding: 18px 2px
+      &--bgWhite
+         background-color: #fff
+      &--bgBlue
+         background-color: $blue
+      &--square
+         & > div
+            aspect-ratio: 1/(785/743)
+      &--mobileFullWidth
+         @media screen and ( max-width: 560px )
+            width: 100% !important
+            margin-top: 8px
+         & > div
+            @media screen and ( max-width: 560px )
+               aspect-ratio: 1/(175/351) !important
+            .headerAbout__item_text--bigBGText
+               @media screen and ( max-width: 560px )
+                  font-size: 47px
+            .headerAbout__item_button
+               @media screen and ( max-width: 560px )
+                  margin: auto 0
+      &--vertical
+         & > div
+            aspect-ratio: 1/(785/363)
+      &--double
+         flex: 2
+         @media screen and ( max-width: 560px )
+            flex: unset
+            width: 100%
+            margin-bottom: 9px
+         & > div
+            @media screen and ( max-width: 560px )
+               padding: 18px 23px
+      &--bigText
+         p
+            font-size: 48px
+            line-height: 130%
+            font-weight: 500
+            width: 90%
+            margin-right: auto
+            @media screen and ( max-width: 560px )
+               font-size: 26px
+               line-height: 135%
+      &--imgRightBottom
+         position: relative
+         img, video
+            position: absolute
+            width: 94.48%
+            right: -4.71%
+            bottom: -14.94%
+            @media screen and ( max-width: 560px )
+               width: 78.48%
+               bottom: -8.94%
+      &--buttons
+         overflow: unset
+         @media screen and ( max-width: 560px )
+            display: none
+         & > div
+            align-items: stretch
+            justify-content: space-between
+            padding: 0 !important
+      &--paddingNull
+         & > div
+            padding: 7% 7% !important
+      &_getClientsButton
+         background-color: #fff
+         background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 50.52%, #FFFFFF 100%)
+         border-radius: 54px
+         flex-grow: 1
+         display: flex
+         flex-direction: column
+         align-items: center
+         overflow: hidden
+         padding: 42px 50px
+         cursor: pointer
+         img, canvas, video
+            width: 176.85%
+            margin-left: -20.52%
+            margin-top: auto
+            margin-bottom: auto
+         p, span
+            font-weight: 500
+            font-size: 32px
+            line-height: 165%
+            text-align: center
+            color: $black
+      &_menuButton
+         @include bigYellowButton
+      &_watchCreo
+         display: flex
+         flex-direction: column
+         align-items: center
+         height: 100%
+         width: 100%
+         & > *
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            font-size: 54px
+            font-weight: 500
+            line-height: 100%
+            letter-spacing: -1.08px
+            flex: 1
+            flex-grow: 1
+            border-radius: 24.73px
+            border: 4px solid #fff
+            & + *
+               margin-top: 15px
+            &:nth-child(3n+1)
+               background: #fff
+            &:nth-child(3n+2)
+               color: #fff
+            &:nth-child(3n+3)
+               background: $yellow
+         &--video
+            width: 132.51%
+            position: absolute
+            left: -9.09%
+            top: 28.13%
+      &_playButton
+         margin: auto 0
+         transition: all .3s ease
+         opacity: 0
+         position: absolute
+         top: 50%
+         left: 50%
+         transform-origin: center
+         transform: scale(1) translate(-50%, -50%)
+         @media screen and ( max-width: 1052px )
+            width: 60px
+         &:hover
+            transform: scale(.9) translate(-50%, -50%)
+      &_button
+         border-radius: 8.61px
+         padding: 9px 28px
+         cursor: pointer
+         transition: all .3s ease
+         font-size: 19px
+         font-weight: 500
+         line-height: 100%
+         text-align: center
+         white-space: nowrap
+         z-index: 3
+         position: relative
+         @media screen and ( max-width: 1052px )
+            font-size: 16px
+         @media screen and ( max-width: 768px )
+            font-size: 12px
+            padding: 6px 16px
+         @media screen and ( max-width: 560px )
+            padding: 6px 18px
+            border-radius: 5px
+         &--bgYellow
+            background-color: $yellow
+         &--bgPink
+            background-color: $pink
+         &--cBlack
+            color: $black
+         &--cWhite
+            color: #fff
+         &--mgtAuto
+            margin-top: auto
+         &:hover
+            transform: scale(.9)
+      &_bottomText
+         text-align: center
+         font-size: 42px
+         font-weight: 500
+         line-height: 100%
+         transition: all .3s ease
+         color: #fff
+         white-space: nowrap
+         @media screen and ( max-width: 560px )
+            font-size: 18px
+         &--mgtAuto
+            margin-top: auto
+      &_text
+         font-size: 32px
+         line-height: 165%
+         text-align: center
+         @media screen and ( max-width: 1052px )
+            font-size: 26px
+            line-height: 150%
+         @media screen and ( max-width: 768px )
+            font-size: 20px
+         &--bigBGText
+            font-size: 76px
+            line-height: 100%
+            letter-spacing: -1.558px
+            width: 100%
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%) rotate(-8.409deg)
+            background-image: url('../assets/gifs/В4-violet.gif')
+            background-size: 100%
+            background-position: center
+            background-clip: text
+            -webkit-background-clip: text
+            color: transparent
+         &--white
+            color: #fff
+         &--mtAuto
+            margin-top: auto
+         &--mbAuto
+            margin-bottom: auto
+      &.JS__openVerticalVideoModal
+         cursor: pointer
+      &:hover
+         .headerAbout__item_playButton
+            opacity: 1
+         .headerAbout__item_bottomText
+            opacity: 0
+      & + *
+         margin-left: 16px
+         @media screen and ( max-width: 560px )
+            margin-left: 0px
+
+   &--inLine
+      .wrapper
+         @media screen and ( max-width: 560px )
+            flex-wrap: nowrap
+         .headerAbout__item
+            @media screen and ( max-width: 560px )
+               width: calc(50% - 3.5px)
+            &:nth-child(2)
+               & ~ *
+                  @media screen and ( max-width: 560px )
+                     display: none

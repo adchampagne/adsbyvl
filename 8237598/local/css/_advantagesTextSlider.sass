@@ -1,0 +1,122 @@
+.advantagesTextSlider
+   margin-top: 20px
+
+   & + .formBlock
+      margin-top: 180px
+      @media screen and ( max-width: 1024px )
+         margin-top: 110px
+      @media screen and ( max-width: 768px )
+         margin-top: 80px
+
+   .wrapper
+
+   &__sliderContainer
+      width: 100%
+      border-radius: 54px
+      overflow: hidden
+      border: 1px solid $gray20
+      @media screen and ( max-width: 560px )
+         border-radius: 26px
+
+   &__sliderWrapper
+
+   &__pagination
+      bottom: 42px !important
+      max-width: 600px
+      width: 100%
+      left: 50% !important
+      transform: translateX(-50%)
+      display: flex
+      align-items: stretch
+      justify-content: space-between
+      @media screen and ( max-width: 1024px )
+         max-width: 40%
+         bottom: 20px !important
+      @media screen and ( max-width: 560px )
+         max-width: 90%
+      .swiper-pagination-bullet
+         display: flex
+         flex: 1
+         width: unset !important
+         border-radius: 1.5px !important
+         background: #fff !important
+         height: 2px !important
+         opacity: 1 !important
+         position: relative
+         &::before
+            content: ""
+            display: flex
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 0%
+            background: $yellow
+         @keyframes swiperBulletLine
+            0%
+               width: 0%
+            100%
+               width: 100%
+         &-active
+            &::before
+               animation: swiperBulletLine 3s linear 1 backwards
+               
+
+   &__sliderItem
+      min-height: 100vh
+      padding-top: 60px
+      padding-bottom: 120px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+      @media screen and ( max-width: 1024px )
+         min-height: unset
+         padding-top: 120px
+         padding-bottom: 120px
+      @media screen and ( max-width: 560px )
+         padding-top: 68px
+         padding-bottom: 68px
+      & > *
+         cursor: grab
+         &:first-child
+            margin-top: auto
+         &:last-child
+            margin-bottom: auto
+      h4
+         text-align: center
+         font-size: 205px
+         font-weight: 500
+         line-height: 100%
+         background-image: url('../assets/gifs/В4.gif')
+         background-size: 100%
+         background-position: center
+         background-clip: text
+         -webkit-background-clip: text
+         color: transparent
+         margin-bottom: 40px
+         width: fit-content
+         @media screen and ( max-width: 560px )
+            font-size: 40px
+      p
+         text-align: center
+         font-size: 32px
+         font-weight: 400
+         line-height: 165%
+         color: #fff
+         width: 60%
+         @media screen and ( max-width: 560px )
+            font-size: 18px
+         &.bgText
+            font-size: 50px
+            max-width: 640px
+            background-image: url('../assets/gifs/В4.gif')
+            background-size: 100%
+            background-position: center
+            background-clip: text
+            -webkit-background-clip: text
+            color: transparent
+            @media screen and ( max-width: 1100px )
+               font-size: 32px
+            @media screen and ( max-width: 768px )
+               font-size: 26px

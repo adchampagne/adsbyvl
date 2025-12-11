@@ -1,0 +1,9 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="menu_mobile">
+<rect width="50" height="50" rx="25" fill="#EBFF00"/>
+<g id="Group">
+<circle id="Ellipse" opacity="0.1" cx="24.8861" cy="24.6774" r="8.94142" transform="rotate(-40 24.8861 24.6774)" stroke="#1E1E1E" stroke-width="0.74462"/>
+<path id="+" d="M24.4706 23.7729L22.4075 21.7097L21.6706 22.4466L23.7338 24.5098L21.6706 26.5729L22.4075 27.3098L24.4706 25.2466L26.5233 27.2993L27.2602 26.5624L25.2075 24.5098L27.2601 22.4571L26.5233 21.7202L24.4706 23.7729Z" fill="#1E1E1E"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,131 @@
+.aboutUsCards
+
+   .wrapper
+      display: flex
+      @media screen and ( max-width: 560px )
+         flex-direction: column
+
+   &__item
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      border-radius: 54px
+      padding: 42px 50px
+      position: relative
+      overflow: hidden
+      @media screen and ( max-width: 560px )
+         padding: 23px
+         margin-bottom: 9px
+         border-radius: 26px
+      &_logo
+         width: 32%
+         @media screen and ( max-width: 560px )
+            display: none
+      &_title
+         color: #fff
+         font-size: 48px
+         font-weight: 500
+         line-height: 130%
+         width: 90%
+         @media screen and ( max-width: 560px )
+            font-size: 26px
+      &_list
+         display: flex
+         flex-wrap: wrap
+         width: calc(100% + 8px)
+         margin-left: -4px
+         padding-top: 20px
+         li
+            width: 33%
+            padding-left: 4px
+            padding-right: 4px
+            font-size: 32px
+            line-height: 165%
+            color: #fff
+            list-style-type: none
+            @media screen and ( max-width: 560px )
+               font-size: 16px
+            &:nth-child(3n+1)
+               width: 27%
+            &:nth-child(3n+2)
+               width: 40%
+      &_map
+         position: absolute
+         width: 153.71%
+         left: -22.75%
+         bottom: -17.26%
+         @media screen and ( max-width: 560px )
+            top: 50%
+         &--arrow
+            position: absolute
+            transform: rotate(180deg)
+            width: 12.79%
+            &-1
+               top: 51%
+               left: 42%
+               @media screen and ( max-width: 560px )
+                  top: 63%
+            &-2
+               top: 47%
+               left: 50%
+               @media screen and ( max-width: 560px )
+                  top: 59%
+            &-3
+               top: 49%
+               left: 57%
+               @media screen and ( max-width: 560px )
+                  top: 61%
+            &-4
+               top: 67%
+               left: 66%
+               @media screen and ( max-width: 560px )
+                  top: 79%
+      &--lineBG
+         border: 1px solid $gray20
+         justify-content: space-between
+         &-svg
+            position: absolute
+            top: 7%
+            left: -101%
+            width: 223%
+            transform: rotate(-214deg)
+      &--blueBG
+         background-color: $blue
+      &--whiteBG
+         background-color: #fff
+         @media screen and ( max-width: 560px )
+            aspect-ratio: 1/(175/351)
+            position: relative
+            .UIbutton
+               position: absolute
+               top: 50%
+               left: 50%
+               transform: translate(-50%, -50%)
+         .aboutUsCards__item_title
+            background-image: url('../assets/gifs/В4-violet.gif')
+            background-size: 100%
+            background-position: center
+            background-clip: text
+            -webkit-background-clip: text
+            color: transparent
+            font-size: 97px
+            width: 250%
+            transform: rotate(-8.409deg)
+            line-height: 100%
+            letter-spacing: -1.945px
+            @media screen and ( max-width: 560px )
+               font-size: 62px
+               margin-top: -50px
+               width: 140%
+      &--centered
+         align-items: center
+         justify-content: space-between
+         .aboutUsCards__item_title
+            text-align: center
+      &--flex2
+         flex: 2
+         aspect-ratio: 1/1
+      &--flex1
+         flex: .7
+      & + *
+         margin-left: 17px

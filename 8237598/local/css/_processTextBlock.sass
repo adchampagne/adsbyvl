@@ -1,0 +1,122 @@
+.processTextBlock
+   padding-top: 180px
+   position: relative
+   overflow: hidden
+   @media screen and ( max-width: 1052px )
+      padding-top: 110px
+   @media screen and ( max-width: 560px )
+      padding-top: 0
+
+   &__line
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      @media screen and ( max-width: 900px )
+         width: 400%
+
+   .wrapper-min
+      position: relative
+
+   &__titleImg
+      position: absolute
+      bottom: 18%
+      left: -25%
+      width: 35%
+      transform: rotate(-10.458deg)
+      @media screen and ( max-width: 768px )
+         left: unset
+         right: -1%
+
+   &__title
+      color: #fff
+      font-size: 64px
+      font-weight: 500
+      line-height: 137%
+      margin-bottom: 50px
+      @media screen and ( max-width: 768px )
+         font-size: 32px
+         line-height: 120%
+         margin-bottom: 8px
+         
+
+   &__list
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      &_block
+         margin-bottom: 36px
+         width: calc(50% - 50px)
+         @media screen and ( max-width: 900px )
+            width: 100%
+         @media screen and ( max-width: 768px )
+            margin-bottom: 26px
+         @media screen and ( max-width: 560px )
+            margin-bottom: 22px
+      &_title,
+      &_desc
+         color: #fff
+         font-size: 32px
+         font-weight: 500
+         line-height: 165%
+         margin-bottom: 5px
+         @media screen and ( max-width: 768px )
+            font-size: 24px
+            line-height: 185%
+         @media screen and ( max-width: 560px )
+            font-size: 18px
+      &_desc
+         font-weight: 400
+         margin-bottom: 0
+
+   &__flyLabel
+      font-size: 30px
+      line-height: 130%
+      letter-spacing: -0.6px
+      position: absolute
+      z-index: 5
+      @media screen and ( max-width: 768px )
+         font-size: 21px
+      @media screen and ( max-width: 560px )
+         position: relative
+         left: unset !important
+         right: unset !important
+         top: unset !important
+         bottom: unset !important
+         margin-top: 80px
+      span
+         background: #fff
+         border-radius: 6px
+         padding-top: 4px
+         padding-bottom: 4px
+         padding-left: 8px
+         padding-right: 8px
+         white-space: nowrap
+      &--right
+         right: -3%
+         transform-origin: center
+         @media screen and ( max-width: 1252px )
+            right: 4%
+      &--left
+         left: -3%
+         transform-origin: center
+         text-align: right
+         @media screen and ( max-width: 1252px )
+            left: 4%
+      &--top10per
+         top: 10%
+      &--bottom10per
+         bottom: 10%
+      &--bottom0per
+         bottom: 0%
+      &--bottomM20per
+         bottom: -20%
+      &--bottom20per
+         bottom: 20%
+      &--bottom50per
+         bottom: 50%
+      &--rotate13
+         transform: rotate(13deg)
+      &--rotate20
+         transform: rotate(20deg)

@@ -1,0 +1,57 @@
+.lightTheme
+   .cases
+      &__item
+         &_title
+            color: $black
+         &_tags
+            color: rgba(0,0,0,.5)
+   
+.cases
+   width: calc(100% + 20px)
+   margin-left: -10px
+   display: flex
+   justify-content: space-between
+   flex-wrap: wrap
+   padding-top: 48px
+   @media screen and ( max-width: 560px )
+      width: 100%
+      margin-left: 0
+
+   &__item
+      width: calc(100% / 3 - 20px)
+      display: flex
+      flex-direction: column
+      margin-bottom: 30px
+      margin-left: 10px
+      margin-right: 10px
+      @media screen and ( max-width: 1024px )
+         width: calc(100% / 2 - 20px)
+      @media screen and ( max-width: 560px )
+         width: 100%
+         margin-left: 0
+         margin-right: 0
+      &_img
+         width: 100%
+         height: auto
+         max-height: 480px
+         min-height: 380px
+         object-fit: cover
+         object-position: center
+         border-radius: 15px
+         margin-bottom: 10px
+         @media screen and ( max-width: 1024px )
+            min-height: 240px
+            max-height: 340px
+      &_title
+         font-weight: 500
+         font-size: 32px
+         line-height: 110%
+         margin-bottom: 10px
+         @media screen and ( max-width: 768px )
+            font-size: 28px
+      &_tags
+         font-size: 24px
+         line-height: 120%
+         color: rgba(#fff, .5)
+         @media screen and ( max-width: 768px )
+            font-size: 20px

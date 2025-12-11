@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /8237598
+Disallow: /back
+Disallow: /local
+Disallow: /ru*
+Disallow: *utm*
+Disallow: /*.php
+Disallow: /*.html
+Host: https://adchampagne.com/
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+Disallow: /8237598
+Disallow: /back
+Disallow: /local

@@ -1,0 +1,81 @@
+.reviewsCards
+
+   .wrapper-min,
+   .wrapper-middle
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+
+   &__item
+      padding: 42px 50px
+      border-radius: 57px
+      width: calc(50% - 8px)
+      position: relative
+      overflow: hidden
+      margin-bottom: 16px
+      @media screen and ( max-width: 1200px )
+         padding: 36px 40px
+         border-radius: 48px
+      @media screen and ( max-width: 1024px )
+         padding: 28px 32px
+         border-radius: 40px
+      @media screen and ( max-width: 768px )
+         width: 100%
+      @media screen and ( max-width: 560px )
+         padding: 18px 23px
+         border-radius: 26px
+      &_title
+         color: #fff
+         font-size: 48px
+         font-weight: 500
+         line-height: 130%
+         @media screen and ( max-width: 1200px )
+            font-size: 40px
+         @media screen and ( max-width: 1024px )
+            font-size: 36px
+         @media screen and ( max-width: 560px )
+            font-size: 26px
+            line-height: 135%
+      &_post
+         font-size: 32px
+         line-height: 165%
+         color: $gray55
+         @media screen and ( max-width: 1200px )
+            font-size: 26px
+         @media screen and ( max-width: 1024px )
+            font-size: 22px
+         @media screen and ( max-width: 560px )
+            font-size: 18px
+            line-height: 166%
+      &_desc
+         color: #fff
+         margin-top: 30px
+         font-size: 32px
+         line-height: 165%
+         @media screen and ( max-width: 1200px )
+            margin-top: 24px
+            font-size: 26px
+         @media screen and ( max-width: 1024px )
+            margin-top: 20px
+            font-size: 22px
+         @media screen and ( max-width: 560px )
+            margin-top: 16px
+            font-size: 18px
+            line-height: 166%
+      &_line
+         position: absolute
+         top: 14%
+         left: -36%
+         width: 188%
+         transform: rotate(-19deg)
+         @media screen and ( max-width: 768px )
+            top: unset
+            bottom: -15%
+            left: -21%
+      
+      &--darkBlue
+         background-color: $darkBlue
+      &--bordered
+         border: 1px solid $gray20
+         @media screen and ( max-width: 768px )
+            padding-bottom: 80px

@@ -1,0 +1,184 @@
+// **** Custom Styless ****
+    // 1. Imports
+    // 2. Colors
+    // 3. Mixins
+    // 4. Main styles
+    // 5. Global Classes
+    // 6. Navbar
+    // 7. Header
+
+
+// Colors
+$black: #000
+$darkGray: #131313
+$lightGray: #272727
+$blue: #1053FF
+$lightenGray: #EDEDED
+
+
+// Main styles
+*
+    border: 0
+    box-sizing: border-box
+    outline: none
+    padding: 0
+    margin: 0
+    vertical-align: baseline
+    font-family: 'RoobertPRO'
+    color: #fff
+table
+    border-collapse: collapse
+    border-spacing: 0
+img
+    height: auto
+    max-width: 100%
+a
+    text-decoration: none
+body
+    background: #000
+    padding-left: 20px
+    padding-right: 20px
+    transition: all .3s ease
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    &.lightTheme
+        background: #fff
+.wrapper
+    max-width: 1160px
+    width: 100%
+    margin: 0 auto
+    @media screen and (max-width: 1180px)
+        padding-left: 20px
+        padding-right: 20px
+
+
+.ui__borderedBlock
+    border: 1px solid #fff
+    border-radius: 6px
+    position: relative
+    & > *
+        position: relative
+        z-index: 2
+    &::before, &::after
+        content: ""
+        display: block
+        position: absolute
+        background: #000
+        z-index: 1
+        transition: all .3s ease
+    &::before
+        width: calc(100% + 4px)
+        height: calc(100% - 24px)
+        left: -2px
+        top: 12px
+    &::after
+        width: calc(100% - 24px)
+        height: calc(100% + 4px)
+        left: 12px
+        top: -2px
+    &.ui__borderedBlock--gray
+        &::before, &::after
+            background: $darkGray
+    &.ui__borderedBlock--hover
+        transition: border .3s ease
+        &:hover
+            border-color: $blue
+
+
+form
+    width: 100%
+    display: flex
+    flex-direction: column
+    label
+        font-size: 18px
+        line-height: 110%
+        color: #fff
+        span
+            color: $blue
+    input
+        margin-top: 4px
+        width: 100%
+        background: unset
+        border: 1px solid rgba(#fff, .2)
+        border-radius: 6px
+        height: 42px
+        font-size: 18px
+        color: #fff
+        padding-left: 12px
+        padding-right: 12px
+        & + label
+            margin-top: 10px
+    .checkbox
+        display: flex
+        align-items: flex-start
+        margin-top: 20px
+        input
+            display: none
+            & + label
+                display: flex
+                align-items: flex-start
+                &::before
+                    content: ""
+                    display: block
+                    width: 20px
+                    min-width: 20px
+                    height: 20px
+                    border-radius: 6px
+                    border: 1px solid rgba(#fff, .2)
+                    margin-right: 10px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    color: #fff
+                    transition: all .3s ease
+                p
+                    font-size: 16px
+                    line-height: 125%
+                    color: #fff
+                    a
+                        color: $blue
+            &:checked + label::before
+                content: "\2713"
+                background: $blue
+                
+
+.preTitle
+    font-weight: 500
+    font-size: 72px
+    line-height: 110%
+    letter-spacing: -0.02em
+    color: #fff
+    margin-top: 84px
+    @media screen and ( max-width: 768px )
+        font-size: 32px
+    & + .cases
+        padding-top: 30px
+        @media screen and ( max-width: 768px )
+            padding-top: 24px
+
+.lightTheme
+    .preTitle
+        color: $black
+
+
+    
+        
+
+
+@import '_nav'
+@import '_header'
+@import '_cases'
+@import '_casesCTA'
+@import '_photoSlider'
+@import '_footer'
+@import '_getClients'
+@import '_cookies'
+@import '_filterTags'
+@import '_casesPage'
+@import '_servicesCards'
+@import '_contacts'
+@import '_about'
+@import '_spheres'
+@import '_news'
+@import '_process'
