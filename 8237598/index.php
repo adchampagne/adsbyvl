@@ -33,14 +33,14 @@
    <meta name="twitter:description" content="Advertising Solutions — агентство мобильного маркетинга, которое реализует эффективные кампании по привлечению и построению бренда для топ-100 клиентов в России" /> 
 
    <meta property="og:url" content="https://www.adsbyvl.ru/">
-   <meta property="og:image" content="local/assets/images/metaPoster/1200x630.png">
+   <!-- <meta property="og:image" content="local/assets/images/metaPoster/1200x630.png"> -->
    <meta property="og:image:width" content="1200">
    <meta property="og:image:height" content="630">
-   <meta name="twitter:image" content="local/assets/images/metaPoster/1024x512.png">
+   <!-- <meta name="twitter:image" content="local/assets/images/metaPoster/1024x512.png">
    <meta property="vk:image" content="local/assets/images/metaPoster/1074x480.png">
    <meta property="fb:image" content="local/assets/images/metaPoster/1200x630.png">
    <meta property="ok:image" content="local/assets/images/metaPoster/1020x456.png">
-   <meta property="tg:image" content="local/assets/images/metaPoster/800x400.png">
+   <meta property="tg:image" content="local/assets/images/metaPoster/800x400.png"> -->
    
    <link rel="stylesheet" href="local/assets/fonts/fonts.css">
    <link rel="stylesheet" href="local/css/swiper-bundle.min.css">
