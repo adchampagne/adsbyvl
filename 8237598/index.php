@@ -122,7 +122,7 @@
    <div class="about">
       <div class="wrapper">
          <div class="about__card about__card--big" id="preabout">
-            <p class="about__card_title">Advertising Solutions — агентство мобильного маркетинга полного цикла. Мы реализуем эффективные кампании для&nbsp;быстрого роста вашего бренда и&nbsp;бизнеса.</p>
+            <p class="about__card_title">Advertising Solutions — агентство мобильного маркетинга полного цикла. Мы реализуем эффективные кампании для&nbsp;быстрого роста вашего бренда и&nbsp;бизнеса, а также занимаемся ИТ-разработкой, поддерживающей этот рост.</p>
             <p class="about__card_desc">Работаем с&nbsp;категориями: E&ndash;Commerce, Retail, Finance и&nbsp;FinTech, Gaming и&nbsp;другими.</p>
             <div class="about__card_buttons">
                <a href="#services" class="about__button JS__scroll">Услуги</a>
@@ -160,7 +160,7 @@
          </div> -->
          <div class="advantages__item advantages__item--blue">
             <h4 class="advantages__item_title">2022</h4>
-            <p class="advantages__item_desc">2&nbsp;года на&nbsp;рынке</p>
+            <p class="advantages__item_desc">3&nbsp;года на&nbsp;рынке</p>
          </div>
       </div>
    </div>
@@ -175,6 +175,13 @@
                <video autoplay="" loop="" muted="" playsinline="">
                   <source src="local/assets/videos/movalpha/capsuleman_v02-1.mov" type="video/mp4; codecs=hvc1">
                   <source src="local/assets/videos/capsuleman.webm" type="video/webm">
+               </video>
+            </div>
+            <div class="services__list_item services__list_item--pink2">
+               <p>IT-разработка</p>
+               <video autoplay="" loop="" muted="" playsinline="" style="width: 70%; right: -14%;">
+                  <source src="local/assets/videos/movalpha/arrow_pink.mov" type="video/mp4; codecs=hvc1">
+                  <source src="local/assets/videos/arrow_pink.webm" type="video/webm">
                </video>
             </div>
             <div class="services__list_item services__list_item--white">
