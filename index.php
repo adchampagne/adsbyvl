@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>360° Mobile Marketing Agency - AdChampagne</title>
+   <meta name="yandex-verification" content="f41e91488c228512" />
 
    <link rel="apple-touch-icon" sizes="57x57" href="local/assets/images/apple-icon-57x57.png">
    <link rel="apple-touch-icon" sizes="60x60" href="local/assets/images/apple-icon-60x60.png">
